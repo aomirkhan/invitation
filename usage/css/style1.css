@@ -1,0 +1,340 @@
+@font-face {
+    font-family: ufont;
+    src: url(../fonts/GreatVibes-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 239);
+}
+
+.contcont {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh; 
+    background: url(../img/loginpage/pl.jpg) no-repeat center ;
+    background-size: cover;
+    
+    
+}
+.container{
+    font-family: ufont;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: flex-start; /* Align content to the top */
+    font-size: 50px;
+    color: #ffffff;
+    opacity: 1;
+}
+.content{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: flex-start; /* Align content to the top */
+    font-size: 40px;
+    color: #ffffff;
+    opacity: 1;
+}
+.adress{
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: flex-start; /* Align content to the top */
+    font-size: 40px;
+    color: #ffffff;
+    opacity: 1;
+}
+  .countdown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.time-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-family: sans-serif;
+	padding: 0 30px;
+	border-right: 1px solid #ffffff;
+	user-select: none;
+    opacity: 1;
+}
+
+.time-section:last-child {
+	border: none;
+}
+
+.count {
+	font-size: 100px;
+    opacity: 1;
+}
+
+.units {
+	font-size: 40px;
+    opacity: 1;
+}
+.contcont::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Adjust the opacity value as needed */
+    z-index: -1;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 30px;
+    right: 47%;
+  }
+
+  .button:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .newcont{
+    padding: 0;
+    z-index: 2;
+    height: 350px;
+    overflow: hidden;
+    
+
+  }
+  .guest{
+    color: #726356;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 50px;
+  }
+  .Invitation{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    color: #726356;
+
+  }
+  .map {
+    width: 90%;
+    margin: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition:transform 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+  }
+  .map:hover{
+    transform: scale(1.03);
+  }
+.foot{
+    height: 10vh;
+    background: url(../img/hero/contact_hero.jpg) no-repeat center;
+    filter: brightness(60%);
+    
+}
+.mapconteiner{
+  position: relative;
+    height: 70vh;
+    
+}
+.adresstohall{
+    margin-left: 40px;
+    color: #726356;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding-top: 2%;
+    padding-left: 3%;
+}
+a{
+    color: #ffffff;
+}
+
+.inst{
+    position: bottom;
+    margin-top:20px;
+    color:#ffffff
+    
+}
+.inst img{
+    max-height: 35px;
+    
+}
+.music {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .toggleButton {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background: url(../img/our_story/icons8-музыка-48.png) no-repeat;
+    background-position: right;
+
+  }
+
+  .toggleButton::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 20px;
+    background-color: #fff;
+  }
+
+  .toggleButton.paused::before {
+    display: none;
+  }
+
+  .toggleButton:hover {
+    transform: scale(1.1);
+  }
+ 
+  @media (min-width: 1200px) and (max-width: 1500px) {
+
+
+  }
+  
+  
+  /* Normal desktop :992px. */
+  @media (min-width: 992px) and (max-width: 1200px) {
+  
+  
+  }
+  
+   
+  /* Tablet desktop :768px. */
+  @media (min-width: 768px) and (max-width: 991px) {
+  
+  
+  }
+  
+   
+  /* small mobile :320px. */
+  @media (max-width: 767px) {
+    .container{
+      font-size: 220%;
+    
+     }
+     .content{
+     font-size: 120%;
+     }  
+     .adress{
+      font-size: 130%;
+      margin-top: 40px;
+     }
+     .countdown{
+      margin-top: 120px ;
+     }
+     .count{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 110%;
+     }
+     .units{
+      font-size: 110%;
+     }
+    .contcont a{
+      right: 35%;
+    }
+    .guest{
+      font-size: 200%;
+    }
+    .Invitation{
+      font-size: 160%;
+    }
+    .adresstohall{
+      align-items: center;
+      font-size: 130%;
+    }
+    .adresstohall img{
+      max-height: 30px;
+    }
+   .map{
+    width: 300px;
+   }
+   .mapconteiner{
+    height: 80VH;
+   }
+   .button{
+    right: 35%;
+  }
+   
+  }
+   
+  /* Large Mobile :480px. */
+  @media only screen and (max-width: 376px) {
+    .container{
+      font-size: 220%;
+    
+     }
+     .content{
+     font-size: 110%;
+     }  
+     .adress{
+      font-size: 120%;
+      margin-top: 40px;
+     }
+     .countdown{
+      margin-top: 120px ;
+     }
+     .count{
+      font-size: 110%;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     }
+     .units{
+      font-size: 100%;
+     }
+    .contcont a{
+      right: 35%;
+    }
+    .button{
+      right: 35%;
+    }
+    .guest{
+      font-size: 180%;
+    }
+    .Invitation{
+      font-size: 140%;
+    }
+    .adresstohall{
+      align-items: center;
+      font-size: 110%;
+    }
+    .adresstohall img{
+      max-height: 30px;
+    }
+   .map{
+    width: 300px;
+   }
+   .mapconteiner{
+    height: 100VH;
+   }
+  }
+  
