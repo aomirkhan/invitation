@@ -18,7 +18,6 @@ var phoneData []PhoneData
 func main() {
 	fs := http.FileServer(http.Dir("./usage"))
 	http.Handle("/usage/", http.StripPrefix("/usage/", fs))
-	// Загрузка данных из текстового файла
 	data, err := ioutil.ReadFile("info.txt")
 	if err != nil {
 		fmt.Println("Ошибка чтения файла:", err)
@@ -34,7 +33,7 @@ func main() {
 		}
 	}
 
-	// Маршруты и обработчики
+	
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/login", loginHandler)
 	http.ListenAndServe(":8000", nil)
